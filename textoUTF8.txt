@@ -1,0 +1,7 @@
+¡Hola!
+
+¡Tengo un montón de texto codificado en UTF-8! ¿a que mola?
+
+¡Pues adios!
+
+€€€€
