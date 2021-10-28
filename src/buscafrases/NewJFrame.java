@@ -17,6 +17,7 @@ public class NewJFrame extends javax.swing.JFrame {
      */
     public NewJFrame() {
         initComponents();
+        var partida = new Partida();
     }
 
     /**

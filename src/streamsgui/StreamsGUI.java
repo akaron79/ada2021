@@ -96,7 +96,7 @@ public class StreamsGUI extends javax.swing.JFrame {
         //Aquí podemos trabajar con el File como de costumbre
             //System.out.println("Abriendo fichero: " + file.getName() + ".");
             //System.out.println(file.toString());
-        //Aquí tenemos que procesar el fichero seleccionado
+        //Tenemos que procesar el fichero seleccionado
         Path path1 = Path.of(file.toString());
         try {
             ArrayList<String> lineas;
@@ -108,6 +108,10 @@ public class StreamsGUI extends javax.swing.JFrame {
                 //tar_texto.setText(lineas.toString());
                 //tar_texto.append(linea);
             }
+            
+            //Forma alternativa de hacer lo mismo pero con funciones lambda
+            //Es decir, la siguiente línea sustituye por completo a todo el for de antes...
+            //lineas.forEach((fras) -> tar_texto.append(fras+"\n"));
      
         } catch (IOException ex) {
             Logger.getLogger(StreamsGUI.class.getName()).log(Level.SEVERE, null, ex);
@@ -153,6 +157,6 @@ public class StreamsGUI extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JMenuItem mit_archivo_abrir;
-    private javax.swing.JTextArea tar_texto;
+    public javax.swing.JTextArea tar_texto;
     // End of variables declaration//GEN-END:variables
 }
